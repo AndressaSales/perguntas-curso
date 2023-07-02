@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perguntados</title>
+      <style>
+        body{
+            font: normal 14pt Arial;
+            background-color: black;
+            color:magenta;
+        }
+      </style>
+</head>
+<body> 
+  
+    <h1 style="text-align: center;">Pesquisa</h1>
+    <script>
+       var n1 = Number(window.prompt('Digite um número: '))
+       var n2 = Number(window.prompt('Digite outro número: '))
+       var i = Number(window.prompt('Quantos naos você tem? '))
+       var dia = Number(window.prompt('Que dia você nasceu? '))
+       var mes = Number(window.prompt('Em que mês você nasceu? [Digite em número]'))
+       var ano = Number(window.prompt('Em que ano você nasceu? '))
+       var nome = window.prompt('Qual o seu nome? ')
+       var s = n1 + n2
+       //window.alert(`A soma entre ${n1} + ${n2} é ${s}`)
+       document.write(`Olá, <strong>${nome}!</strong> prazer em te conhecer<br/>`)
+       document.write(`Seu nome em maiusculo ${nome.toUpperCase()}<br/>`)
+       document.write(`Seu nome em menusculo ${nome.toLowerCase()}<br/>`)
+       document.write(`${nome} tem ${i} anos, e nasceu no dia ${dia} ${mes} ${ano} <br/>`)
+       document.write(`A soma entre ${n1} + ${n2} =  ${s}`) //consegui rodar na tela 
+
+    </script>
+</body>
+</html>
